@@ -1,59 +1,44 @@
 # R34 Manager
 
-A personal content manager for rule34.xxx — curate franchises and characters, browse and search, download and organize a local library, and clean up duplicates. Runs entirely on your own machine.
+A free Windows desktop app for rule34.xxx: follow the characters and tags you like, download what you want, and keep your collection organised on your own PC. **No ads, ever.**
 
-**Author:** vaynemain1992 · **License:** Source-available, personal use only (see LICENSE)
-
----
+**Author:** vaynemain1992 · **License:** personal use (see [LICENSE](LICENSE)) · **18+ only**
 
 ## Download
 
-**[⬇ Latest installer (Windows 10/11)](https://github.com/vaynemain1992-tech/r34-manager/releases/latest)**
+⬇️ **[Latest version (Windows 10/11)](https://github.com/vaynemain1992-tech/r34-manager/releases/latest)**
 
-No Python, no Node.js, no command line — just run the installer.
+Run the installer. You don't need Python, Node.js or the command line. The app updates itself after that.
 
-### ⚠️ First-run warning (read this)
+### First-run warning
+The installer isn't signed yet, so Windows SmartScreen may say "Windows protected your PC". Click **More info**, then **Run anyway**. Each release lists its SHA-256 checksum so you can check your download.
 
-The installer is **unsigned**, so Windows SmartScreen will show *"Windows protected your PC"*.
-This is expected for independent software:
+## What it does
 
-1. Click **More info**
-2. Click **Run anyway**
+- **Dashboard:** your favourite franchises and characters with pictures, a top 10, and one-click downloads (newest, best, or your own choice)
+- **Search and Explore:** search with tag suggestions, and discover new characters and franchises
+- **Feed:** follow tags and characters and see new posts in one place; save views and share them with friends
+- **Downloads:** a queue with live progress, Smart download, and sync rules that fetch new posts by themselves
+- **Library:** folders organised for you, collections and albums, a look-alike duplicate finder, and bulk tools
+- **Phone access:** use the app from your phone at home or away (password-protected)
+- **Social (optional):** friends, profiles, top 10 lists, community duels, and end-to-end encrypted messages
+- **Safety:** a content-safety filter that can't be turned off, plus your own blacklist
 
-Some antivirus tools occasionally flag PyInstaller-built apps as a false positive. The SHA-256 hash of each release is listed in its release notes so you can verify your download.
+Everything runs on your PC. Your library and your API key never leave it.
 
----
+## Getting started
+1. Create a free account at [rule34.xxx](https://rule34.xxx).
+2. Open **Account → Options** and copy your **API Access Credentials** (click *Generate New Key* if the field is empty).
+3. Paste the whole line into the setup wizard. It splits it into the key and user ID for you.
 
-## Features
-
-- **Setup wizard** — walks you through connecting your own rule34.xxx account (API key + user ID) with step-by-step instructions, choosing a download folder, and picking starter franchises
-- **Curated rosters** — top franchises come pre-loaded with characters instantly
-- **Character detection** — three-depth pipeline (quick / standard / deep) that discovers a franchise's characters and picks the correct tag for each
-- **Smart downloads** — per-character folder organization, download queue with live progress, "recommended" downloads that grab the top-scored slice of any tag
-- **Library** — scan existing folders (with metadata recovery), collections, bulk select, filtering and sorting
-- **Visual duplicate finder** — perceptual hashing catches reposts and re-encodes that byte-level comparison misses; one click keeps the best copy of each
-- **Backup / restore** — export your whole setup to JSON, import on any machine
-- **Diagnostics** — built-in test suite with exportable reports
-
-## Getting your API credentials
-
-1. Create a free account at [rule34.xxx](https://rule34.xxx/index.php?page=account&s=signup)
-2. Go to [Account → Options](https://rule34.xxx/index.php?page=account&s=options)
-3. Scroll to **API Access Credentials** (click *Generate New Key* if empty)
-4. Copy the whole string — the setup wizard splits it into key + user ID automatically
-
-The app works without credentials on the public API, but with lower rate limits.
+## R34 Manager Plus (optional)
+The app is free and fully usable. Supporters can get **Plus** for extras such as profile styles, cloud backup and convenience tools. Plus never limits searching, viewing or downloading.
 
 ## Reporting bugs
-
-1. Enable the Debug tab (Settings → Debug mode)
-2. Debug → **Run Full Suite** → **Export Report**
-3. Send the report file + a short description of what you were doing
+Settings → Help → **Report a problem**, or open an [issue](https://github.com/vaynemain1992-tech/r34-manager/issues).
 
 ## Data & privacy
-
-Everything is local: your database lives in `%LOCALAPPDATA%\R34Manager`, downloads go to the folder you choose, and your API credentials never leave your machine (they're excluded from backups too).
+Your library database lives in `%LOCALAPPDATA%\R34Manager`, and downloads go to the folder you choose. Your API key and passwords are never sent anywhere or included in backups.
 
 ---
-
-© 2025 vaynemain1992. All rights reserved. Personal use only — see [LICENSE](LICENSE).
+© 2025–2026 vaynemain1992. Personal use only. See [LICENSE](LICENSE). Content accessed through the app belongs to its respective owners.
