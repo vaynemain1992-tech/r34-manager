@@ -8,7 +8,7 @@ A personal content manager for rule34.xxx — curate franchises and characters, 
 
 ## Download
 
-**[⬇ Latest installer (Windows 10/11)](../../releases/latest)**
+**[⬇ Latest installer (Windows 10/11)](https://github.com/vaynemain1992-tech/r34-manager/releases/latest)**
 
 No Python, no Node.js, no command line — just run the installer.
 
